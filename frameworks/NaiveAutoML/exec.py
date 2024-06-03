@@ -52,7 +52,7 @@ def run(dataset, config):
     # NAML wasn't really designed to run for long time constraints, so we
     # make it easy to run NAML with its default configuration for time/iterations.
     if not config.framework_params.get("_use_default_time_and_iterations", False):
-        kwargs["timeout"] = config.max_runtime_seconds
+        kwargs["timeout_overall"] = config.max_runtime_seconds
         # NAML stops at its first met criterion: iterations or time.
         # To ensure time is the first criterion, set max_hpo_iterations very high
         kwargs["max_hpo_iterations"] = 1e10
