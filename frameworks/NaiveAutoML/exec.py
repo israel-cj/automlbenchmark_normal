@@ -58,7 +58,7 @@ def run(dataset, config):
         kwargs["max_hpo_iterations"] = 1e10
         # NAML has a static per-pipeline evaluation time of 10 seconds,
         # which is not accommodation for larger datasets.
-        kwargs["execution_timeout"] = max(config.max_runtime_seconds // 20, 10)
+        # kwargs["execution_timeout"] = max(config.max_runtime_seconds // 20, 10)
     else:
         log.info("`_use_default_time_and_iterations` is set, ignoring time constraint.")
 
