@@ -31,7 +31,7 @@ AutoGluon_hq_il001:
     _save_artifacts: ['leaderboard', 'info']
     presets: ['high_quality', 'optimize_for_deployment']
     _leaderboard_test: True
-    infer_limit: 0.01
+    infer_limit: 0.0001
 
 autosklearn:
   version: '0.15.0'
