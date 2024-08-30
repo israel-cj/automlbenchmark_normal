@@ -6,7 +6,7 @@
 
 AutoGluon:
   abstract: true
-  version: "0.8.0"
+  version: "latest"
 
 AutoGluon_benchmark:
   extends: AutoGluon
